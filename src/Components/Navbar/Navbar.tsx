@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
@@ -6,9 +7,9 @@ const Navbar = () => {
           <img src="logo.svg" alt="logo" height={40} width={40}/>
           <h2>Medsync</h2>
         </div> 
-        <a href="/" className="bg-white text-black rounded-full py-2 px-4">
+        <Link to="/" className="bg-white text-black rounded-full py-2 px-4">
             Get started
-        </a>
+        </Link>
     </nav>
   )
 }
