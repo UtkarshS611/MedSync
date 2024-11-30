@@ -1,7 +1,16 @@
 import Navbar from "../Navbar/Navbar"
 import TextGradient from "./_Components/TextGradient"
 
+import { useNavigate } from "react-router-dom"
+
 const Home = () => {
+
+    const navigate = useNavigate()
+
+    const handleNavigate = () => {
+        navigate("/features")
+    }
+    
     return (
         <main className="h-screen py-2 overflow-hidden sm:rounded-b-[3rem] home-gradient">
             <div className="grid place-items-center sm:p-0 p-2">
@@ -20,13 +29,13 @@ const Home = () => {
                     Powered by Google Gemini AI: Chat, analyze reports, check symptoms, and track medicines effortlessly.
                 </div>
                 <div className="p-1 border-[1px] border-black/60 rounded-lg">
-                    <button className="bg-black/90 text-white rounded-sm px-4 py-2">
+                    <button onClick={handleNavigate} className="bg-black/90 text-white rounded-sm px-4 py-2">
                         Get started
                     </button>
                 </div>
-                <div className="mt-6 h-[50vh] w-[80%] sm:w-[60vw] bg-black/20 p-3 rounded-[1rem]">
+                <div className="mt-6 h-[50vh] w-[80%] sm:w-[60vw] bg-white/20 border-[1.5px] border-white/20 p-3 rounded-[1rem]">
                     <div className="h-full w-full rounded-[0.5rem] overflow-hidden">
-                        <img className="h-[inherit] w-full" src="https://images.unsplash.com/photo-1731271140119-34ad9551ff10?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                        <img className="h-[inherit] w-full" src="https://images.unsplash.com/photo-1731271140119-34ad9551ff10?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="preview" />
                     </div>
                 </div>
             </section>

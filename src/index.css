@@ -66,5 +66,10 @@
 }
 
 .home-gradient{
-  background: linear-gradient(-30deg, #f9c784,  rgba(255,205,178,1) 26%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(
+        -5deg,
+      #ffc8dd,
+      rgba(255,205,178,1) 26%,
+      rgba(255,255,255,1) 100%
+    );
 }
