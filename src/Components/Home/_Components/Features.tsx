@@ -4,6 +4,7 @@ import {
     Pill,
     SquareMenu
   } from "lucide-react";
+import { Link } from "react-router-dom";
   
   const features = [
     {
@@ -12,7 +13,8 @@ import {
         'AI medical assistant offering personalized guidance, real-time support, health tracking, symptom analysis, and medication reminders.',
       icon: <MessageCircle className="size-4 md:size-6" />,
       background: 'bg-green-100',
-      color: 'text-green-600'
+      color: 'text-green-600',
+      href: '/dashboard/chat'
     },
     {
       title: 'Symptom Checker',
@@ -20,7 +22,8 @@ import {
         'An AI-powered symptom checker helps identify potential health conditions based on reported symptoms and provides recommendations.',
       icon: <Stethoscope className="size-4 md:size-6" />,
       background: 'bg-red-100',
-      color: 'text-red-600'
+      color: 'text-red-600',
+      href: '/dashboard/symptoms'
     },
     {
       title: 'Medication iteration analysis',
@@ -28,7 +31,8 @@ import {
         'Medication iteration analysis involves evaluating the effectiveness and side effects of different medication doses or combinations over time.',
       icon: <Pill className="size-4 md:size-6" />,
       background: 'bg-blue-100',
-      color: 'text-blue-600'
+      color: 'text-blue-600',
+      href: '/dashboard/medications'
     },
     {
       title: 'Medical Record analysis',
@@ -36,7 +40,8 @@ import {
         'Medical record analysis involves reviewing patient data to identify patterns, diagnose conditions, and inform treatment plans.',
       icon: <SquareMenu className="size-4 md:size-6" />,
       background: 'bg-yellow-100',
-      color: 'text-yellow-600'
+      color: 'text-yellow-600',
+      href: '/dashboard/records'
     },
   ];
   
@@ -49,7 +54,7 @@ import {
           </h2>
           <div className="mx-auto mt-14 grid gap-x-20 gap-y-8 md:grid-cols-2 md:gap-y-6 lg:mt-20">
             {features.map((feature, idx) => (
-              <div className="flex gap-6 rounded-lg md:block md:p-5" key={idx}>
+              <Link to={feature.href} className="flex gap-6 rounded-lg md:block md:p-5 shadow-xl" key={idx}>
                 <span className={`mb-8 flex size-10 shrink-0 items-center justify-center rounded-full ${feature.background} ${feature.color} md:size-12`}>
                   {feature.icon}
                 </span>
@@ -61,7 +66,7 @@ import {
                     {feature.description}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
