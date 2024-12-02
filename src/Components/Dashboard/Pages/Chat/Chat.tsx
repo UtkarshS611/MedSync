@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { ChatMessage } from '../ChatMessage/ChatMessage';
-import { ChatInput } from '../ChatInput/ChatInput';
-import { getGeminiResponse } from '../../lib/gemini';
+import { ChatMessage } from '../../../../Components/ChatMessage/ChatMessage';
+import { ChatInput } from '../../../../Components/ChatInput/ChatInput';
+import { getGeminiResponse } from '../../../../lib/gemini';
 
 interface Message {
   id: number;

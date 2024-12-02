@@ -8,7 +8,7 @@ const Home = () => {
     const navigate = useNavigate()
 
     const handleNavigate = () => {
-        navigate("/features")
+        navigate("/dashboard")
     }
     
     return (
