@@ -9,7 +9,7 @@ import {
     {
       title: 'AI chat assistant',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
+        'AI medical assistant offering personalized guidance, real-time support, health tracking, symptom analysis, and medication reminders.',
       icon: <MessageCircle className="size-4 md:size-6" />,
       background: 'bg-green-100',
       color: 'text-green-600'
@@ -17,7 +17,7 @@ import {
     {
       title: 'Symptom Checker',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
+        'An AI-powered symptom checker helps identify potential health conditions based on reported symptoms and provides recommendations.',
       icon: <Stethoscope className="size-4 md:size-6" />,
       background: 'bg-red-100',
       color: 'text-red-600'
@@ -25,7 +25,7 @@ import {
     {
       title: 'Medication iteration analysis',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
+        'Medication iteration analysis involves evaluating the effectiveness and side effects of different medication doses or combinations over time.',
       icon: <Pill className="size-4 md:size-6" />,
       background: 'bg-blue-100',
       color: 'text-blue-600'
@@ -33,7 +33,7 @@ import {
     {
       title: 'Medical Record analysis',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, accusantium quam. Temporibus quae quos deserunt!',
+        'Medical record analysis involves reviewing patient data to identify patterns, diagnose conditions, and inform treatment plans.',
       icon: <SquareMenu className="size-4 md:size-6" />,
       background: 'bg-yellow-100',
       color: 'text-yellow-600'
