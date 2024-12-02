@@ -1,5 +1,6 @@
 import Navbar from "../Navbar/Navbar";
 import Features from "./_Components/Features";
+import Footer from "./_Components/Footer";
 import TextGradient from "./_Components/TextGradient";
 
 import { useNavigate } from "react-router-dom";
@@ -50,6 +51,7 @@ const Home = () => {
         </section>
       </main>
       <Features />
+      <Footer />
     </>
   );
 };
