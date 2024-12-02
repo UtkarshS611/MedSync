@@ -10,6 +10,8 @@ export async function getGeminiResponse(prompt: string) {
     return "I apologize, but I'm unable to process your request due to missing configuration. Please contact support.";
   }
 
+  
+
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
     const result = await model.generateContent(prompt);
