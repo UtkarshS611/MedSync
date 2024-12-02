@@ -65,6 +65,10 @@
   }
 }
 
+body{
+  height: 200vh;
+}
+
 .home-gradient{
   background: linear-gradient(
         -5deg,

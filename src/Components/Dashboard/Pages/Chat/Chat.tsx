@@ -51,8 +51,8 @@ export function Chat() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="bg-white rounded-2xl shadow-sm mb-4">
+    <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div className="bg-white rounded-2xl shadow-lg mb-4">
         <div className="h-[calc(100vh-16rem)] overflow-y-auto p-4 space-y-4">
           {messages.map((message) => (
             <ChatMessage

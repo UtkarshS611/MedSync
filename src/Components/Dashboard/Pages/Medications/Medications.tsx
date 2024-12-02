@@ -68,7 +68,7 @@ export function Medications() {
 
         <button
           onClick={addMedication}
-          className="mb-4 flex items-center gap-2 text-emerald-600 hover:text-emerald-700"
+          className="mb-4 flex items-center gap-2 text-blue-600 hover:text-blue-700"
         >
           <Plus className="w-4 h-4" />
           Add Another Medication
@@ -77,7 +77,7 @@ export function Medications() {
         <button
           onClick={handleAnalyze}
           disabled={!medications.some(med => med.trim()) || isLoading}
-          className="w-full bg-emerald-500 text-white py-2 px-4 rounded-lg hover:bg-emerald-600 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+          className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
         >
           {isLoading ? (
             <>

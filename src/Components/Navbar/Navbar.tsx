@@ -7,7 +7,7 @@ const Navbar = () => {
           <img src="logo.svg" alt="logo" height={40} width={40}/>
           <h2>Medsync</h2>
         </div> 
-        <Link to="/dashboard" className="bg-white text-black rounded-full py-2 px-4">
+        <Link to="/dashboard/chat" className="bg-white text-black hover:bg-blue-500 duration-200 hover:text-white rounded-full py-2 px-4">
             Get started
         </Link>
     </nav>

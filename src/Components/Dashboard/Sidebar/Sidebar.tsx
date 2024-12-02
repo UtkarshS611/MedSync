@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import {
   MessageCircle,
@@ -36,12 +36,12 @@ const Sidebar: React.FC = () => {
   return (
     <div className="w-72 h-full fixed shadow-lg">
       <nav className="flex flex-col p-4">
-        <div className="flex gap-2 items-center mb-10"> 
+        <Link to={'/'} className="flex gap-2 items-center mb-10"> 
           <img src="/logo.svg" alt="logo" height={50} width={50}/>
           <h2 className="font-bold text-xl">Medsync</h2>
-        </div>
+        </Link>
         {items.map((item ,index) => (
-          <NavLink to={item.href} className={({isActive}) => `bg-blue-100 mt-4 flex items-center gap-2 px-4 py-2 rounded-lg w-full ${isActive? 'bg-red-100' : 'bg-blue-100'}`} key={index}>
+          <NavLink to={item.href} className={({isActive}) => `mt-4 flex items-center gap-2 px-4 py-2 rounded-lg w-full ${isActive? 'bg-blue-500 text-white' : 'bg-gray-200'}`} key={index}>
             <span>{item.icon}</span>
             <h3>{item.name}</h3>
           </NavLink>
