@@ -79,7 +79,7 @@ const Sidebar: React.FC = () => {
           </nav>
         </div>
       ) : (
-        <div className="bg-white shadow-md fixed w-full px-4 py-2 flex items-center justify-between">
+        <div className="bg-white shadow-md fixed w-full px-4 py-2 flex items-center justify-between z-[99]">
           <Link to={"/"} className="flex gap-2 items-center">
             <img src="/logo.svg" alt="logo" height={40} width={40} />
             <h2 className="font-bold text-xl">Medsync</h2>

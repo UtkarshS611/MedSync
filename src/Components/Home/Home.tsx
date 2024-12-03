@@ -1,12 +1,51 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+
 import Navbar from "../Navbar/Navbar";
 import Features from "./_Components/Features";
 import Footer from "./_Components/Footer";
 import TextGradient from "./_Components/TextGradient";
 
-import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
+
+  const photos = [
+    {
+      src: "/LargeScreenPreview.png",
+      alt: "Photo 1" 
+    },
+    {
+      src: "/MediumScreenPreview.png",
+      alt: "Photo 2" 
+    },
+    {
+      src: "/MobilePreview.png",
+      alt: "Photo 3" 
+    },
+  ];
+
+  const [currentPhoto, setCurrentPhoto] = useState(photos[0]);
+
+  const updatePhotos = () => {
+    const width = window.innerWidth;
+    if (width < 640) {
+      setCurrentPhoto(photos[2]);
+    } else if (width < 1024) {
+      setCurrentPhoto(photos[1]);
+    } else {
+      setCurrentPhoto(photos[0]);
+    }
+  };
+
+  useEffect(() => {
+    updatePhotos();
+    window.addEventListener("resize", updatePhotos);
+    return () => {
+      window.removeEventListener("resize", updatePhotos);
+    };
+  }, []);
 
   const handleNavigate = () => {
     navigate("/dashboard/chat");
@@ -39,12 +78,12 @@ const Home = () => {
               Get started
             </button>
           </div>
-          <div className="mt-6 h-[50vh] w-[80%] sm:w-[50vw] bg-white/20 border-[1.5px] border-white/20 p-3 rounded-[1rem]">
+          <div className="mt-6 h-[50vh] w-[80%] xl:w-[50vw] bg-white/20 border-[1.5px] border-white/20 p-3 rounded-[1rem]">
             <div className="h-full w-full rounded-[0.5rem] overflow-hidden">
               <img
-                className="h-[inherit] w-full"
-                src="/preview.png"
-                alt="preview"
+                className="w-full"
+                src={currentPhoto.src}
+                alt={currentPhoto.alt}
               />
             </div>
           </div>

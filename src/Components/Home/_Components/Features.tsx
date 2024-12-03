@@ -54,7 +54,7 @@ import { Link } from "react-router-dom";
           </h2>
           <div className="mx-auto mt-14 grid gap-x-20 gap-y-8 md:grid-cols-2 md:gap-y-6 lg:mt-20">
             {features.map((feature, idx) => (
-              <Link to={feature.href} className="flex gap-6 rounded-lg md:block md:p-5 shadow-xl" key={idx}>
+              <Link to={feature.href} className="flex gap-6 rounded-lg md:block p-5 shadow-xl" key={idx}>
                 <span className={`mb-8 flex size-10 shrink-0 items-center justify-center rounded-full ${feature.background} ${feature.color} md:size-12`}>
                   {feature.icon}
                 </span>
