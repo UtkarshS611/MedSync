@@ -40,8 +40,8 @@ export function Medications() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto">
-      <div className="bg-white rounded-2xl shadow-sm p-6">
+    <div className="w-full grid mt-[56px] place-items-center">
+      <div className="rounded-2xl px-4 py-6 shadow-lg mb-4 w-full lg:ml-8">
         <h2 className="text-2xl font-semibold mb-4">Medication Interaction Checker</h2>
         
         <div className="space-y-3 mb-4">

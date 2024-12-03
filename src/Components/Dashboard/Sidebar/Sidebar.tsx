@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 const Sidebar: React.FC = () => {
   const [isLargeScreen, setIsLargeScreen] = useState<boolean>(
-    window.innerWidth > 1000
+    window.innerWidth > 1024
   );
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

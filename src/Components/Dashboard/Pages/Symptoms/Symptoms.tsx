@@ -25,8 +25,8 @@ export function Symptoms() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="bg-white rounded-2xl shadow-sm p-6">
+    <div className="w-full grid mt-[56px] place-items-center">
+      <div className="rounded-2xl px-4 py-6 shadow-lg mb-4 w-full lg:ml-8">
         <h2 className="text-2xl font-semibold mb-4">Symptom Checker</h2>
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700 mb-2">
