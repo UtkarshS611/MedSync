@@ -105,6 +105,7 @@ const Sidebar: React.FC = () => {
                 {items.map((item, index) => (
                   <NavLink
                     to={item.href}
+                    onClick={handleMenuToggle}
                     className={({ isActive }) =>
                       `mt-4 flex items-center gap-2 px-4 py-2 rounded-lg w-full ${
                         isActive ? "bg-blue-500 text-white" : "bg-gray-200"
