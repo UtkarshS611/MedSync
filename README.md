@@ -7,7 +7,6 @@ Medsync is a web application leveraging Google Gemini API to provide symptom che
 ## Authors
 
 - [@UtkarshS611](https://www.github.com/UtkarshS611)
-- [@bhanuprakashyadav](https://github.com/bhanuprakashyadav)
 
 
 ## Contributing
