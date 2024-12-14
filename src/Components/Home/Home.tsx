@@ -61,7 +61,7 @@ const Home = () => {
           <div>
             <TextGradient />
           </div>
-          <div className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl flex flex-col items-center">
+          <div className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl flex flex-col items-center px-2 sm:px-0">
             <span className="text-center">Your health companion:</span>
             <span className="text-center">Analyze, Chat, Check with next gen AI</span>
             <span className="text-center">and remind seamlessly</span>
