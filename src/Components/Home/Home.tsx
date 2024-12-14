@@ -62,9 +62,9 @@ const Home = () => {
             <TextGradient />
           </div>
           <div className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-6xl flex flex-col items-center">
-            <span>Your health companion:</span>
-            <span>Analyze, Chat, Check with next gen AI</span>
-            <span>and remind seamlessly</span>
+            <span className="text-center">Your health companion:</span>
+            <span className="text-center">Analyze, Chat, Check with next gen AI</span>
+            <span className="text-center">and remind seamlessly</span>
           </div>
           <div className="text-black/60 text-center text-sm sm:text-base">
             Powered by Google Gemini AI: Chat, analyze reports, check symptoms,
